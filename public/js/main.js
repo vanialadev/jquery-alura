@@ -17,8 +17,14 @@ function atualizaTamanhoFrase() {
     tamanhoFrase.text(numPalavras);
 }
 
+function atualizaTempoInicial(tempo) {
+    tempoInicial = tempo;
+    $("#tempo-digitacao").text(tempo);
+}
+
 function inicializaContadores() {
     campo.on("input", function() {
+        
         var conteudo = campo.val();
 
         var qtdPalavras = conteudo.split(/\S+/).length - 1;
