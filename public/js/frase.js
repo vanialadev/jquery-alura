@@ -3,7 +3,7 @@ $("#botao-frase-id").click(buscaFrase);
 
 function fraseAleatoria() {
     $("#spinner").toggle(); 
-    $.get("http://localhost:3000/frases", trocaFraseAleatoria)
+    $.get("http://192.168.1.6:3001/frases", trocaFraseAleatoria)
     .fail(function (){
         $("#erro").toggle();
         setTimeout(function(){
